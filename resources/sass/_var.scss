@@ -1,0 +1,87 @@
+// Colors
+$blue-blue: #1437b9;
+$warm-blue: #4169e1;
+$medium-blue: #001c86;
+$dark-blue: #001875;
+$dark-blue-grey: #1b2845;
+
+$sun-yellow: #ffd43d;
+$watermelon: #ff436c;
+$tealish: #2cd5c4;
+$turquoise: #04cab6;
+$green: #00beab;
+
+$pale-grey: #f2f6f9;
+$light-grey: #f5f8fa;
+$blue-grey: #5d778a;
+$light-blue-grey: #b9c9d6;
+
+$dark: #050505;
+$black: #000000;
+$white: #ffffff;
+
+// OLD :
+$primary: $blue-blue;
+$secondary: $sun-yellow;
+$tertiary: $warm-blue;
+$error: $watermelon;
+$success: $turquoise;
+
+/*
+$primary: #1b2845;
+$secondary: #fed635;
+$tertiary: #637bb1;
+$error: #e74c3c;
+$success: #41ad49;*/
+
+///////////////
+// Font
+
+// Folder
+$fonts: "../static/fonts";
+// Default size body
+$font-size: 16;
+
+///////////////
+// responsive
+
+// Mobile 5"
+$phoneL: "screen and (max-width: 640px)";
+
+// Only tablet portrait
+$tab-portrait-only: "screen and (min-width: 641px) and (max-width: 960px)";
+
+// Min tablet
+$tab-min: "screen and (min-width: 641px)";
+
+// Tablettes Portrait
+$tab-portrait: "screen and (max-width: 960px)";
+
+// Tablettes Paysage
+$tab: "screen and (max-width: 1200px)";
+$desktop: "screen and (min-width: 961px)";
+
+// Better break points
+
+// Tiny device
+$screen-xs-min: 350px;
+
+// Small tablets and large smartphones (landscape view)
+$screen-sm-min: 576px;
+
+// Small tablets (portrait view)
+$screen-md-min: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Large tablets and desktops
+$screen-xxl-min: 1400px;
+
+///////////////
+// Common
+$headerHeightFull: 65px;
+$headerHeightSimplified: 50px;

@@ -1,0 +1,37 @@
+/*
+$primary: #1b2845;
+$secondary: #fed635;
+$tertiary: #637bb1;
+$error: #e74c3c;
+$success: #41ad49;*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "AvenirNext";
+  font-size: em(15px);
+  line-height: normal;
+  color: #050505;
+  overflow-x: hidden;
+  padding-top: 65px;
+}
+@media screen and (max-width: 640px) {
+  body {
+    padding-top: 50px;
+  }
+}
+body.noHeader {
+  padding-top: 0;
+}
+body a {
+  color: #1437b9;
+}
+body strong {
+  font-weight: 500;
+}
+body u {
+  text-decoration: underline;
+}

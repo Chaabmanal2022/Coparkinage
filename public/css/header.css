@@ -1,0 +1,174 @@
+/*
+$primary: #1b2845;
+$secondary: #fed635;
+$tertiary: #637bb1;
+$error: #e74c3c;
+$success: #41ad49;*/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  position: fixed;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 0.5px solid #b9c9d6;
+  z-index: 18000;
+  min-height: 50px;
+}
+@media screen and (min-width: 641px) and (max-width: 960px) {
+  header {
+    min-height: 65px;
+  }
+}
+header.nav-open {
+  z-index: 18000000;
+}
+@media screen and (max-width: 1200px) {
+  header {
+    padding: 0 0 0 10px;
+  }
+}
+@media screen and (max-width: 960px) {
+  header {
+    padding: 0;
+  }
+}
+header #Logo {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 960px) {
+  header #Logo {
+    flex: 1 1 auto;
+    justify-content: center;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  header #Logo {
+    max-height: 50px;
+  }
+}
+header #Logo img {
+  width: 140px;
+}
+header #Logo.egencia img {
+  width: 240px;
+}
+header nav {
+  flex: 1 1 auto;
+  min-height: 65px;
+}
+@media screen and (max-width: 960px) {
+  header nav {
+    position: fixed;
+    right: -100%;
+    top: 65px;
+    bottom: 0;
+    background: transparent;
+    transition: background 0.25 linear;
+    overflow-y: auto;
+  }
+  header nav.show {
+    right: 0;
+    left: -1px;
+    background: rgba(0, 0, 0, 0.2);
+  }
+  header nav.show > ul {
+    right: 0;
+  }
+}
+@media screen and (max-width: 640px) {
+  header nav {
+    top: 50.5px;
+  }
+}
+header nav > ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+@media screen and (max-width: 960px) {
+  header nav > ul {
+    flex-direction: column;
+    position: absolute;
+    right: -100%;
+    width: 230px;
+    max-width: 100%;
+    background: #ffffff;
+    border-left: 0.5px solid #b9c9d6;
+    transition: right 0.25s ease-in-out;
+    padding-top: 10px;
+    min-height: 400px;
+    justify-content: flex-start;
+  }
+}
+header nav > ul li {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15px;
+  position: relative;
+}
+@media screen and (max-width: 960px) {
+  header nav > ul li {
+    padding: 10px 20px;
+  }
+}
+header #hamburger {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65px;
+  height: 100%;
+}
+@media screen and (max-width: 960px) {
+  header #hamburger {
+    display: block;
+  }
+}
+@media screen and (max-width: 640px) {
+  header #hamburger {
+    width: 50px;
+  }
+}
+header #hamburger span {
+  position: absolute;
+  right: 21px;
+  display: block;
+  width: 17px;
+  height: 2px;
+  background-color: #1437b9;
+}
+header #hamburger span:nth-child(1) {
+  top: 25px;
+}
+header #hamburger span:nth-child(2) {
+  top: 31px;
+}
+header #hamburger span:nth-child(3) {
+  top: 37px;
+}
+@media screen and (max-width: 640px) {
+  header #hamburger span {
+    right: 14px;
+  }
+  header #hamburger span:nth-child(1) {
+    top: 18px;
+  }
+  header #hamburger span:nth-child(2) {
+    top: 24px;
+  }
+  header #hamburger span:nth-child(3) {
+    top: 30px;
+  }
+}

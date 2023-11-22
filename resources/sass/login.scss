@@ -1,0 +1,32 @@
+#cnx
+{
+
+background-color: #e9d4d9;
+
+    height: 100vh;
+    label
+    {
+        color: black !important;
+        text-transform: uppercase;
+        font-size: 12px;
+        font-weight:bolder;
+        letter-spacing: .7px;
+    }
+
+    .contenu
+    {
+        background-color: #4169e1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    hr
+    {
+        color: #4169e1;
+        height: 2px;
+    }
+}
